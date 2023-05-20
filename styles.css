@@ -37,4 +37,6 @@ img {box-sizing: border-box; border-style: solid; border-width: thin; max-width:
 .Line {display: flex; flex-direction: row; justify-content: space-between;
        margin-left: 10px; margin-right: 20px                              } 
 
+.Centre {text-align: center}
+
 .Today {text-align: center; font-size: 2em}
