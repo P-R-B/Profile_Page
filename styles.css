@@ -4,15 +4,16 @@ body {font-family: Arial, sans-serif; background-color: rgb(100, 100, 200)}
           border-width: thick; margin-bottom: 50px                             }
 .Section:hover {background-color: rgb(100, 255, 100); border-color: rgb(100, 128, 100)}
 
-.Row3, .Row2 {display: flex; flex-direction: row; justify-content: space-evenly; 
-              box-sizing: border-box                                            }
+.Row3, .Row2, .Row1 {display: flex; flex-direction: row; justify-content: space-evenly; 
+                     box-sizing: border-box                                            }
 @media screen and (max-width: 1000px){.Row3, .Row2 {display: flex; flex-direction: column;
                                                     align-items: center                   }}
 
-.Cell {width: 300px; height: 500px; background-color: cyan; position: relative; 
+.Cell {width: inherit; height: fit-content; background-color: cyan; position: relative; 
        border-style: solid; border-color: rgb(0, 150, 150); border-width: thick; 
        margin-bottom: 50px; box-sizing: border-box                                }
 .Cell:hover {background-color: rgb(100, 255, 255); border-color: rgb(75, 150, 150)}
+.Row3 .Cell {width: 300px; height: 500px}
 .Row2 .Cell {width: 500px; height: 550px}
 @media screen and (max-width: 1000px){.Cell {width: inherit; height: fit-content;
                                              margin-left: 30px; margin-right: 30px}}
@@ -23,10 +24,10 @@ h1 {padding: 10px 10px 10px 10px;
     background: linear-gradient(to right, black 30%, cyan 90%)}
 
 h2 {padding-left: 3px; color: rgb(150, 150, 255); background-color: green;
- -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: black }
+    -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: black      }
 
 h3 {padding-left: 3px; color: cyan; background-color: rgb(0, 150, 150);
-      -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: black }
+    -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: black   }
 
 p {margin-left: 10px; margin-right: 10px}
 
