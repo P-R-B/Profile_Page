@@ -51,10 +51,10 @@ img {box-sizing: border-box; border-style: solid; border-width: thin; max-width:
 .Today {text-align: center; font-size: 2em; min-width: 550px}          
 
 @media screen and (min-width: 1001px){
-    .Section1 {background-image: url("Assembly.jpg")}
-    .Section2 {background-image: url("Laptop.jpg")}
-    .Section3 {background-image: url("Gameplay.jpg")}
-    .Section4 {background-image: url("Fishing.jpg")} 
+    .Section1 {background-image: url("Assembly.JPG")}
+    .Section2 {background-image: url("Laptop.JPG")}
+    .Section3 {background-image: url("Gameplay.JPG")}
+    .Section4 {background-image: url("Fishing.JPG")} 
 
     .Section1:hover, .Section2:hover, .Section3:hover, .Section4:hover 
         {background-image: none;
