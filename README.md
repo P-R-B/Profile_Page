@@ -1,5 +1,6 @@
 # Profile_Page
 My credential background, motive for software development and links to projects.
+The images here are heavily downscaled so that they all load. Unfortunately, GitHub Pages provide a low bandwidth, therefore I have to work around that issue.
 
 The webpage is available at: https://p-r-b.github.io/Profile_Page/
 
