@@ -51,10 +51,10 @@ img {box-sizing: border-box; border-style: solid; border-width: thin; max-width:
 .Today {text-align: center; font-size: 2em; min-width: 550px}          
 
 @media screen and (min-width: 1001px){
-    .Section1 {background-image: url("Assembly.jpg")}
-    .Section2 {background-image: url("Laptop.jpg")}
-    .Section3 {background-image: url("Gameplay.jpg")}
-    .Section4 {background-image: url("Fishing.jpg")} 
+    .Section1 {background-image: url("Assembly.jpg"); background-size: 100% 100%}
+    .Section2 {background-image: url("Laptop.jpg"); background-size: 100% 100%}
+    .Section3 {background-image: url("Gameplay.jpg"); background-size: 100% 100%}
+    .Section4 {background-image: url("Fishing.jpg"); background-size: 100% 100%} 
 
     .Section1:hover, .Section2:hover, .Section3:hover, .Section4:hover 
         {background-image: none;
@@ -65,16 +65,15 @@ img {box-sizing: border-box; border-style: solid; border-width: thin; max-width:
 
     h2 {background-color: rgba(0, 128, 0, 0.3)}
     
-    .Cell, .Cell1, .Cell2, .Cell3, .Cell4
-        {opacity: 0%}
+    .Cell, .Cell1, .Cell2, .Cell3, .Cell4 {opacity: 0%}
         
     .Cell1 p, .Cell2 p, .Cell3 p, .Cell4 p, .Cell4 ul {opacity: 0%}
     .Cell1 a, .Cell2 a, .Cell3 a, .Cell4 a {opacity: 0%; margin-right: 10px}
         
-    .Cell1 {background-image: url("p1.jpg")}
-    .Cell2 {background-image: url("p2.jpg")}
-    .Cell3 {background-image: url("CodeWars.jpg")}
-    .Cell4 {background-image: url("g.jpg")} 
+    .Cell1 {background-image: url("p1.jpg"); background-size: 100% 100%}
+    .Cell2 {background-image: url("p2.jpg"); background-size: 100% 100%}
+    .Cell3 {background-image: url("CodeWars.jpg"); background-size: 100% 100%}
+    .Cell4 {background-image: url("g.jpg"); background-size: 100% 100%} 
     
     .Section2:hover .Cell, .Section4:hover .Cell,
     .Section3:hover .Cell1, .Section3:hover .Cell2, .Section3:hover .Cell3, .Section3:hover .Cell4 
