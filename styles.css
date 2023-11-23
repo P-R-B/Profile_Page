@@ -51,14 +51,10 @@ img {box-sizing: border-box; border-style: solid; border-width: thin; max-width:
 .Today {text-align: center; font-size: 2em; min-width: 550px}          
 
 @media screen and (min-width: 1001px){
-    .Section1 {background-image: url("Assembly.jpg"); background-size: 50% 50%;
-               background-repeat: no-repeat; background-position: center       }
-    .Section2 {background-image: url("Laptop.jpg"); background-size: 50% 50%;
-               background-repeat: no-repeat; background-position: center     }
-    .Section3 {background-image: url("Gameplay.jpg"); background-size: 50% 50%;
-               background-repeat: no-repeat; background-position: center       }
-    .Section4 {background-image: url("Fishing.jpg"); background-size: 50% 50%;
-               background-repeat: no-repeat; background-position: center      } 
+    .Section1 {background-image: url("Assembly.jpg"); background-size: 100% 100%}
+    .Section2 {background-image: url("Laptop.jpg"); background-size: 100% 100%}
+    .Section3 {background-image: url("Gameplay.jpg"); background-size: 100% 100%}
+    .Section4 {background-image: url("Fishing.jpg"); background-size: 100% 100%} 
 
     .Section1:hover, .Section2:hover, .Section3:hover, .Section4:hover 
         {background-image: none;
