@@ -18,8 +18,8 @@ h1 {padding: 10px 10px 0px 10px; width: inherit; box-sizing: border-box; min-wid
 .Row3 .Cell {width: 300px}
 .Section4 .Cell {height: 1400px}
 
-h2 {padding-left: 3px; color: rgb(150, 150, 255);
-    -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: black}
+h2 {padding-left: 3px; color: rgb(150, 150, 255); background-color: rgba(0, 128, 0, 0.3);
+    -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: black                     }
 
 h3 {padding-left: 3px; color: cyan; background-color: rgb(75, 150, 150);
     -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: black   }
@@ -39,7 +39,7 @@ img {box-sizing: border-box; border-style: solid; border-width: thin; max-width:
    margin-bottom: 50px; box-sizing: border-box; position: relative}
 
 .Cell1, .Cell2, .Cell3, .Cell4 
-  {background-size: cover; width: 500px; position: relative; box-sizing: border-box}   
+  {width: 500px; position: relative; box-sizing: border-box}   
 
 .Bottom {width: inherit; position: absolute; bottom: 10px}
 
@@ -50,30 +50,23 @@ img {box-sizing: border-box; border-style: solid; border-width: thin; max-width:
 
 .Today {text-align: center; font-size: 2em; min-width: 550px}          
 
-@media screen and (min-width: 1001px){
-    .Section1 {background-image: url("Assembly.jpg"); background-size: 100% 100%}
-    .Section2 {background-image: url("Laptop.jpg"); background-size: 100% 100%}
-    .Section3 {background-image: url("Gameplay.jpg"); background-size: 100% 100%}
-    .Section4 {background-image: url("Fishing.jpg"); background-size: 100% 100%} 
+@media screen and (min-width: 1001px) {
+    .Cell1 img, .Cell2 img, .Cell3 img, .Cell4 img
+        {position: absolute; width: 100%; height: 100%; border-style: none; opacity: 0%}
+
+    .Section3:hover img {opacity: 100%}
+
+    .Section1 img, .Section2 img, .Section3 img, .Section4 img
+        {position: absolute; width: 100%; height: 100%; border-style: none; z-index: 1}
+
+    .Section1:hover img, .Section2:hover img, .Section3:hover > img, .Section4:hover img,
+    .Cell1:hover img, .Cell2:hover img, .Cell3:hover img, .Cell4:hover img
+        {opacity: 0%}
 
     .Section1:hover, .Section2:hover, .Section3:hover, .Section4:hover 
-        {background-image: none;
-         background-color: rgb(100, 255, 100); border-color: rgb(100, 128, 100)}
-                                    
-    .Section1 p, .Section2 p, .Section3 p, .Section4 p {opacity: 0%}
-    .Section1:hover p, .Section2:hover p, .Section3:hover > p, .Section4:hover p {opacity: 100%}
+        {background-color: rgb(100, 255, 100); border-color: rgb(100, 128, 100)}
 
-    h2 {background-color: rgba(0, 128, 0, 0.3)}
-    
-    .Cell, .Cell1, .Cell2, .Cell3, .Cell4 {opacity: 0%}
-        
-    .Cell1 p, .Cell2 p, .Cell3 p, .Cell4 p, .Cell4 ul {opacity: 0%}
-    .Cell1 a, .Cell2 a, .Cell3 a, .Cell4 a {opacity: 0%; margin-right: 10px}
-        
-    .Cell1 {background-image: url("p1.jpg"); background-size: 100% 100%}
-    .Cell2 {background-image: url("p2.jpg"); background-size: 100% 100%}
-    .Cell3 {background-image: url("CodeWars.jpg"); background-size: 100% 100%}
-    .Cell4 {background-image: url("g.jpg"); background-size: 100% 100%} 
+    .Cell1 a, .Cell2 a, .Cell3 a, .Cell4 a {margin-right: 10px}
     
     .Section2:hover .Cell, .Section4:hover .Cell,
     .Section3:hover .Cell1, .Section3:hover .Cell2, .Section3:hover .Cell3, .Section3:hover .Cell4 
@@ -85,25 +78,19 @@ img {box-sizing: border-box; border-style: solid; border-width: thin; max-width:
     .Cell1:hover p, .Cell2:hover p, .Cell3:hover p, .Cell4:hover p, .Cell4:hover ul, 
     .Cell1:hover a, .Cell2:hover a, .Cell3:hover a, .Cell4:hover a 
         {opacity: 100%}
-
-    .Section1:hover h2, .Section2:hover h2, .Section3:hover h2, .Section4:hover h2
-        {background-color: rgb(100, 128, 100)} 
         
     .Line {margin-right: 10px}    
 
     a:hover {color: red}
-                                     }
+                                      }
+    
+  .Section1:hover h2, .Section2:hover h2, .Section3:hover h2, .Section4:hover h2     
+    {background-color: rgb(100, 128, 100)}  
 
-@media screen and (max-width: 1000px){
-    .Section1, .Section2, .Section3, .Section4
-        {background-image: none;
-         background-color: rgb(100, 255, 100); border-color: rgb(100, 128, 100)}
-
-    h2 {background-color: rgb(100, 128, 100)}     
-
+@media screen and (max-width: 1000px) {
     .Row3, .Row2 {display: flex; flex-direction: column; align-items: center}
     
-    .Cell {width: inherit; height: fit-content; margin-left: 30px; margin-right: 30px}
+    .Cell {width: inherit; height: fit-content; margin-left: 30px; margin-right: 30px; opacity: 0%}
 
     .Line {margin-right: 20px}
-                                     }                   
+                                      }                   
